@@ -9,12 +9,12 @@ while true; do
     echo "1. Add a car"
     echo "2. List cars in inventory"
     echo "3. Quit"
-    read -r -p "What would you like to do? " user_choice
+    read -rp "What would you like to do? " user_choice
     case $user_choice in
         1)
-            read -r -p "What year was the car created? " car_year
-            read -r -p "Who made the car? " car_creator
-            read -r -p "What model is the car? " car_model
+            read -rp "What year was the car created? " car_year
+            read -rp "Who made the car? " car_creator
+            read -rp "What model is the car? " car_model
             echo "Ok, we have registered your vehicle: $car_year $car_creator $car_model"
             ;;
         2)
