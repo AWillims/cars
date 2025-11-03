@@ -20,7 +20,7 @@ while true; do
             read -rp "What model is the car? " car_model
 
             user_vehicle="$car_year:$car_creator:$car_model"
-            echo -e "$user_vehicle" >> "$my_old_cars"
+            echo -e '\n'"$user_vehicle" >> "$my_old_cars"
 
             echo "Ok, we have registered your vehicle: $car_year $car_creator $car_model"
             ;;
